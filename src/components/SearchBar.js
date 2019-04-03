@@ -1,17 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default class SearchBar extends React.Component {
     state = { searchTerm: '' };
 
     render(){
         return (
-            <form className="ui search"> 
-                <div className="ui icon input">
-                    <input className="prompt" type="text" placeholder="Search..."/>
-                    <i className="search icon"></i>
-                </div>
-            </form> 
+            <div className="ui segment"> 
+                <form className="ui form search"> 
+                    <h1>Video Search</h1>
+                    <div className="field">
+                        <div className="ui icon input">
+                            <input className="prompt" type="text" placeholder="Search..."/>
+                            <i className="search icon"></i>
+                        </div>
+                    </div>
+                </form> 
+            </div>
         );
     }
 }

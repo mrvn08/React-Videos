@@ -2,8 +2,8 @@ import React from 'react';
 
 const VideoCard = () => {
     return (
-        <div class="card">
-            <div class="content">
+        <div className="card">
+            <div className="content">
                 Im a video card
             </div>
         </div>

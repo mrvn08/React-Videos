@@ -1,6 +1,7 @@
 import React from 'react';
-import React from 'react-dom';
 import SearchBar from './SearchBar';
+import VideoDetails from './VideoDetails';
+import VideoList from './VideoList';
 
 export default class App extends React.Component{
 
