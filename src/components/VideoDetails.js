@@ -3,7 +3,7 @@ import React from 'react';
 export default class VideoDetails extends React.Component{
     render(){
         return (
-            <div className="ui">
+            <div className={`ui ${this.props.passedClass}`}>
                 <div className="row">
                     <iframe 
                         width="560" 

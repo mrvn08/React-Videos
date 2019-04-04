@@ -18,12 +18,12 @@ export default class App extends React.Component{
     render(){
         return (
             <div className="ui container">
-                <div className="row">
-                    <SearchBar onSearch={this.onSearch}/>
-                </div>
+                <SearchBar onSearch={this.onSearch}/>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
                 <div className="ui divided two column grid">
-                    <VideoDetails className="seven wide column"/>
-                    <VideoList className="three wide column"/>
+                    <VideoDetails passedClass="ten wide column"/>
+                    <VideoList passedClass="six wide column"/>
                 </div>
             </div>
         )

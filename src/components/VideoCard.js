@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoCard = () => {
     return (
-        <div className="card">
+        <div className="ui segment">
             <div className="content">
                 Im a video card
             </div>
