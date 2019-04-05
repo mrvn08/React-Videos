@@ -1,10 +1,12 @@
 import React from 'react';
+import VideoList from './VideoList';
 
-const VideoCard = () => {
+const VideoCard = ({video, onVideoSelect}) => {
     return (
-        <div className="ui segment">
+        <div className="ui segment" onClick={() => onVideoSelect}>
+            <img className='ui image' src={video.snippet.thumbnails.medium.url}/>
             <div className="content">
-                Im a video card
+                <div className='header'>{video.snippet.title}</div>
             </div>
         </div>
     );
