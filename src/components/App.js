@@ -18,7 +18,7 @@ export default class App extends React.Component{
             }
         })
 
-        this.setState({videos: response});
+        this.setState({videos: response.items});
     }
 
     onSelect = video => {
