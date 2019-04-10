@@ -6,7 +6,7 @@ const VideoList = ({videos, onVideoSelect, passedClass}) =>{
         return <VideoCard key={video.id.videoId} video={video} onVideoSelect={onVideoSelect} />
     });
     return (
-        <div className={`ui cards ${passedClass}`}>
+        <div className={`ui relaxed divided list ${passedClass}`}>
             {renderedVideos}
         </div>
     );
