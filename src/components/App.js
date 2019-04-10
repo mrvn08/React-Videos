@@ -39,7 +39,7 @@ export default class App extends React.Component{
                         />
                         <VideoList 
                             videos={this.state.videos}
-                            onVideoSelect={this.state.onSelect}
+                            onVideoSelect={this.onSelect}
                             passedClass="six wide column"
                         />
                     </div>
