@@ -18,29 +18,34 @@ export default class App extends React.Component{
             }
         })
 
-        this.setState({videos: response.data.items});
+        this.setState({
+            videos: response.data.items,
+            selectedVideo: response.data.items[0]
+        });
     }
 
     onSelect = video => {
         this.setState({selectedVideo: video});
     }
 
+    componentDidMount(){
+        this.onSearch('Vandel Terratech');
+    }
+
     render(){
         return (
             <div className="ui container">
                 <SearchBar onSearch={this.onSearch}/>
-                <div className="ui hidden divider"></div>
-                <div className="ui hidden divider"></div>
                 <div className="ui grid">
                     <div className="ui row">
                         <VideoDetails 
                             selectedVideo={this.state.selectedVideo}
-                            passedClass="ten wide column"
+                            passedClass="eleven wide column"
                         />
                         <VideoList 
                             videos={this.state.videos}
                             onVideoSelect={this.onSelect}
-                            passedClass="six wide column"
+                            passedClass="five wide column"
                         />
                     </div>
                 </div>
